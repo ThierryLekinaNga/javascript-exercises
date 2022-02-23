@@ -1,6 +1,20 @@
-const repeatString = function() {
+const repeatString = function(string, num) {
+    let str = '';
+    let i = 0;
 
+    if(num < 0)
+        return 'ERROR';
+
+    else {
+        while(i < num) {
+            str += string;
+            i++;
+        }
+    }
+    return str;
 };
+
+repeatString('', 10);
 
 // Do not edit below this line
 module.exports = repeatString;
